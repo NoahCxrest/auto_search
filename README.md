@@ -29,7 +29,7 @@ copy `.env.example` to `.env` and configure:
 
 ```
 OLLAMA_HOST=http://localhost:11434
-OLLAMA_MODEL=qwen2.5vl:3b
+OLLAMA_MODEL=qwen3:0.6b
 SEARCH_CONFIDENCE_THRESHOLD=0.7
 MAX_RETRIES=3
 REQUEST_TIMEOUT_MS=30000
