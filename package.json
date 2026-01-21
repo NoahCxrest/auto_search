@@ -1,0 +1,30 @@
+{
+  "name": "auto-search",
+  "version": "1.0.0",
+  "description": "intelligent auto-search decision system for ai models",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "dev": "tsx src/index.ts",
+    "serve": "tsx src/server.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": ["ai", "search", "ollama", "typescript", "effect"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.9",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.17"
+  },
+  "dependencies": {
+    "effect": "^3.19.14",
+    "ollama": "^0.6.3",
+    "zod": "^4.3.5"
+  }
+}
