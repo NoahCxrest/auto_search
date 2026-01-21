@@ -132,7 +132,8 @@
             const messages = body.messages;
 
             if (messages && Array.isArray(messages)) {
-                const userMessage = messages.find(m => m.role === 'user');
+                const userMessages = messages.filter(m => m.role === 'user');
+                const userMessage = userMessages[userMessages.length - 1];
                 const textPart = userMessage?.parts?.find(p => p.type === 'text');
                 const query = textPart?.text ?? '';
 
